@@ -1,5 +1,6 @@
 # Page layout
 * Home page
+* About page
 * Menu page
 * Order page (kind of like coffee app)
 
@@ -22,8 +23,8 @@
 
 # About page
 #   I.  Site-wide header
-#   II. About LCS
-#   III.About LCS Beacon Blend
+#   II. About LCS Beacon Blend
+#   III.About LCS
 #   IV. Images (different from home page)
 #   V.  Site-wide footer
 
