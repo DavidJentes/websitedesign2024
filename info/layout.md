@@ -7,17 +7,17 @@
 # Home page
 #   I.  Site-wide header
 #   II. Large banner
-##      A.  Slowly spinning coffee mug background
+##      A.  Video background
 ##      B.  Text saying "The best coffee made by the best students spinning in the center
 ##      C.  Order and menu buttons (to go to respective pages)
 #   III.Info
 ##      A. Hours
 ##      B. Dates
 ##      C. Location
-#   IV. Highlighted coffees
-##      A. Hot Chocolate Latte
-##      B. Iced Coffee
-##      C. Sugar-free Hot Chocolate
+#   IV. Special options
+##      A. Mocha
+##      B. Sugar-free
+##      C. Almond milk
 #   V.  Images
 #   VI. Site-wide footer
 
@@ -32,15 +32,16 @@
 #   I.  Site-wide header
 #   II. Order button
 #   III.Drink options
-#   IV. Add-ons
+#   IV. Milk options
+#   V.  Add-ons
 ##      A.  Syrups
 ##      B.  Drizzles
 ##      C.  Whipped Cream
-#   V.  Desserts
-#   VI. Order button
-#   VII. Site-wide footer
+#   V.  Order button
+#   VI. Site-wide footer
 
 # Order page
+NOTE: Use code to switch between each section to create better flow
 #   I. Site-wide header
 #   II. Information
 ##      A. Name
