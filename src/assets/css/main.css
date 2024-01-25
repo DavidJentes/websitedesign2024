@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&family=Vast+Shadow&display=swap');
+
+header {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #eed3b3;
+    border-radius: 30px;
+    position: fixed;
+    top: 0px;
+    width: calc(100% - 60px);
+    z-index: 10;
+}
+
+header h1 {
+    font-family: 'Vast Shadow', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 15px;
+    background-color: #ffe4c4;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: font-size 500ms, margin-top 200ms, background-color 200ms;
+}
+
+nav a:hover {
+    background-color: #ddc2a2;
+    font-size: calc(1rem + 10px);
+}
+
+body {
+    background-color : #ffe4c4;
+    color: #222222;
+    font-family: 'Libre Baskerville', sans-serif;
+    margin: 0;
+}
+
+.cover {
+    text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
+    text-align: center;
+    width: 100%;
+    padding: 25% 0px;
+    background-image: url("/assets/img/coffee.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.cover-tagline {
+    font-size: 2rem;
+    color: #dddddd;
+}
+
+main {
+    margin: 30px;
+}
