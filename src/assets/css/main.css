@@ -70,6 +70,12 @@ body {
     color: #dddddd;
 }
 
+@media screen and (max-width: 1000px) {
+    .cover {
+        padding-top: 75%;
+    }
+}
+
 main {
     margin: 30px;
 }
