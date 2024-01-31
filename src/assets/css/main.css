@@ -70,9 +70,15 @@ body {
     color: #dddddd;
 }
 
-@media screen and (max-width: 1000px) {
-    .cover {
-        padding-top: 75%;
+@media screen and (max-width: 950px) {
+    .cover-tagline {
+        margin: 25% 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cover-tagline {
+        margin-top: 50%;
     }
 }
 
