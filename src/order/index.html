@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order - Beacon Blend</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
     <header>
@@ -17,90 +18,105 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Order Online</h2>
-        <section>
-            <h2>Just want to browse the menu?</h2>
-            <a href="menu">Menu</a>
-        </section>
-        <form>
-            <section>
+    <main class="top">
+        <h2 class="title">Order Online</h2>
+        <h2 class="title" id="menu1">Just want to browse the menu?</h2>
+        <div class="button-container" id="menu2">
+            <a href="menu" class="button">Menu</a>
+        </div><br />
+        <div class="button-container">
+            <a href="../notetojudges.html" id="note">Note to judges about this page</a>
+        </div>
+        <form action="../notetojudges.html">
+            <section id="step1">
                 <h2>Your contact information</h2>
-                <label for="name">Your name</label>
-                <input type="text" name="name" id="name" />
+                <label for="name">Your name</label><br />
+                <input type="text" name="name" id="name" /><br /><br />
                 <select id="phoneext" name="phoneext">
                     <option value="ext">Contact A.C.E. phone extension</option>
                     <option value="phone">Contact phone number</option>
                     <option value="school">I am a student</option>
-                </select>
+                </select><br /><br />
                 <div id="extDiv">
-                    <input type="number" size="4" name="ext" id="ext" />
+                    <input type="number" size="4" name="ext" id="ext" value="" />
                 </div>
-                <div id="phoneDiv">
+                <div id="phoneDiv" class="hidden">
                     <input type="tel" name="phone" id="phone" />
-                </div>
-                <a href="#">Next</a>
+                </div><br /><br />
+                <div class="button-container">
+                    <a href="#" class="button button-alt" id="step1next">Next</a>
+                </div><br />
             </section>
-            <section>
+            <section id="step2" class="hidden">
                 <h2>Your drink</h2>
-                <h2>$2.50</h2>
+                <h2>$2.50 - 16oz</h2>
                 <select id="hoticed" name="hoticed">
                     <option value="hot">Hot drinks</option>
                     <option value="iced">Iced drinks</option>
-                </select>
+                </select><br /><br />
                 <div id="hotDiv">
                     <select id="hot" name="hot">
-                        <option value="espresso">Espresso</option>
-                        <option value="dblespresso">Double Espresso</option>
                         <option value="latte">Latte</option>
                         <option value="mocha">Mocha</option>
-                        <option value="americano">Americano</option>
                         <option value="cappuccino">Cappuccino</option>
+                        <option value="americano">Americano</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="dblespresso">Double Espresso</option>
                         <option value="hotchoc">Hot Chocolate</option>
                         <option value="sfhotchoc">Sugar-free Hot Chocolate</option>
                     </select>
                 </div>
-                <div id="icedDiv">
+                <div id="icedDiv" class="hidden">
                     <select id="hot" name="hot">
+                        <option value="icedlatte">Iced Latte</option>
                         <option value="icedcoffee">Iced Coffee (espresso and milk)</option>
+                        <option value="icedmocha">Iced Mocha</option>
                         <option value="icedespresso">Iced Espresso</option>
                         <option value="iceddblespresso">Iced Double Espresso</option>
-                        <option value="icedlatte">Iced Latte</option>
-                        <option value="icedmocha">Iced Mocha</option>
                     </select>
-                </div>
-                <a href="#">Next</a>
+                </div><br /><br />
+                <div class="button-container">
+                    <a href="#" class="button button-alt" id="step2back">Back</a>
+                    <a href="#" class="button button-alt" id="step2next">Next</a>
+                </div><br />
             </section>
-            <section>
+            <section id="step3" class="hidden">
                 <h2>Your milk choice</h2>
                 <select id="milk" name="milk">
                     <option value="whole">Whole milk</option>
                     <option value="almond">Almond milk</option>
                 </select>
                 <h2>Your add-ons</h2>
-                <label><input type="checkbox" name="caramel" id="caramel" value="true" /> Salted Caramel</label><span id="caramelpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="caramelpumps" /> pumps</span><br />
-                <label><input type="checkbox" name="pecan" id="pecan" value="true" /> Butter Pecan</label><span id="pecanpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pecanpumps" /> pumps</span><br />
-                <label><input type="checkbox" name="pumpkin" id="pumpkin" value="true" /> Pumpkin</label><span id="pumpkinpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pumpkinpumps" /> pumps</span><br />
-                <label><input type="checkbox" name="sfvanilla" id="sfvanilla" value="true" /> Sugar-free Vanilla</label><span id="sfvanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfvanillapumps" /> pumps</span><br />
-                <label><input type="checkbox" name="hazelnut" id="hazelnut" value="true" /> Hazelnut</label><span id="hazelnutpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="hazelnutpumps" /> pumps</span><br />
-                <label><input type="checkbox" name="peppermint" id="peppermint" value="true" /> Peppermint</label><span id="peppermintpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="peppermintpumps" /> pumps</span><br />
-                <label><input type="checkbox" name="vanilla" id="vanilla" value="true" /> French Vanilla</label><span id="vanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="vanillapumps" /> pumps</span><br />
-                <label><input type="checkbox" name="sfmarshmallow" id="sfmarshmallow" value="true" /> Sugar-free Toasted Marshmallow</label><span id="sfmarshmallowpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfmarshmallowpumps" /> pumps</span><br />
+                <label><input type="checkbox" name="caramel" id="caramel" value="true" /> Salted Caramel</label><span id="caramelpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="caramelpumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="pecan" id="pecan" value="true" /> Butter Pecan</label><span id="pecanpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pecanpumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="pumpkin" id="pumpkin" value="true" /> Pumpkin</label><span id="pumpkinpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pumpkinpumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="sfvanilla" id="sfvanilla" value="true" /> Sugar-free Vanilla</label><span id="sfvanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfvanillapumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="hazelnut" id="hazelnut" value="true" /> Hazelnut</label><span id="hazelnutpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="hazelnutpumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="peppermint" id="peppermint" value="true" /> Peppermint</label><span id="peppermintpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="peppermintpumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="vanilla" id="vanilla" value="true" /> French Vanilla</label><span id="vanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="vanillapumps" class="pumps" /> pumps</span><br />
+                <label><input type="checkbox" name="sfmarshmallow" id="sfmarshmallow" value="true" /> Sugar-free Toasted Marshmallow</label><span id="sfmarshmallowpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfmarshmallowpumps" class="pumps" /> pumps</span><br /><br />
                 <label><input type="checkbox" name="mocha" value="true"> Mocha Swirl</label><br />
                 <label><input type="checkbox" name="whitemocha" value="true"> White Mocha Swirl</label><br />
                 <label><input type="checkbox" name="caramels" value="true"> Caramel Swirl</label><br />
-                <label><input type="checkbox" name="whippedcream" value="true"> Whipped Cream</label><br />
-                <a href="#">Next</a>
+                <label><input type="checkbox" name="whippedcream" value="true"> Whipped Cream</label><br /><br /><br />
+                <div class="button-container">
+                    <a href="#" class="button button-alt" id="step3back">Back</a>
+                    <a href="#" class="button button-alt" id="step3next">Next</a>
+                </div><br />
             </section>
-            <section>
-                <h2>Your payment</h2>
-                <select name="payment" id="payment">
+            <section id="step4" class="hidden">
+                <label for="payment">Your payment</label><br />
+                <select name="payment" id="payment" required>
+                    <option value="" default>Please select</option>
                     <option value="cash">Cash - $2.50 for one</option>
                     <option value="punchcard">Punchcard - $10 for five</option>
-                </select>
-                <h2>Special notes</h2>
-                <input type="text" id="notes" name="notes" />
-                <input type="submit" value="Place order" />
+                </select><br /><br />
+                <label for="notes">Special notes</label><br />
+                <input type="text" id="notes" name="notes" /><br /><br />
+                <div class="button-container">
+                    <a href="#" class="button button-alt" id="step4back">Back</a>
+                    <input type="submit" value="Place order" class="button button-alt" />
+                </div>
             </section>
         </form>
     </main>
@@ -114,5 +130,7 @@
         <span>&copy;2024 Lighthouse Christian School</span><br />
         <span>Created for LCS and Student Conventions by David Jentes</span>
     </footer>
+    <script src="../assets/js/navhide.js"></script>
+    <script src="../assets/js/formhide.js"></script>
 </body>
 </html>

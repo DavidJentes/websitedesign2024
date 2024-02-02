@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Beacon Blend</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
     <header>
@@ -17,13 +18,13 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Menu</h2>
+    <main class="top">
+        <h2 class="title">Menu</h2>
+        <div class="button-container">
+            <a href="order" class="button">Order online</a>
+        </div>
         <section>
-            <a href="order">Order online</a>
-        </section>
-        <section>
-            <h2>16oz Hot Drinks - $2.50 each</h2>
+            <h2 class="title">16oz Hot Drinks - $2.50 each</h2>
             <ul>
                 <li>Espresso (single or double)</li>
                 <li>Latte</li>
@@ -32,17 +33,17 @@
                 <li>Cappucino</li>
                 <li>Hot Chocolate (available sugar-free)</li>
             </ul>
-            <h2>16oz Cold Drinks - $2.50 each</h2>
+            <h2 class="title">16oz Cold Drinks - $2.50 each</h2>
             <ul>
                 <li>Iced Coffee (Espresso and Milk)</li>
                 <li>Espresso (single or double)</li>
                 <li>Latte</li>
                 <li>Mocha</li>
             </ul>
-            <h2>All drinks are available with whole or almond milk.</h2>
+            <h2 class="title">All drinks are available with whole or almond milk.</h2>
         </section>
         <section>
-            <h2>Syrups (with sugar)</h2>
+            <h2 class="title">Syrups (with sugar)</h2>
             <ul>
                 <li>Salted Caramel</li>
                 <li>French Vanilla</li>
@@ -51,22 +52,26 @@
                 <li>Pumpkin</li>
                 <li>Peppermint</li>
             </ul>
-            <h2>Syrups (sugar-free)</h2>
+            <h2 class="title">Syrups (sugar-free)</h2>
             <ul>
                 <li>Vanilla</li>
                 <li>Toasted Marshmallow</li>
             </ul>
-            <h2>Swirls</h2>
+        </section>
+        <section>
+            <h2 class="title">Swirls</h2>
             <ul>
                 <li>Mocha</li>
                 <li>White Mocha</li>
                 <li>Caramel</li>
             </ul>
-            <h2>Whipped cream is available as an option for each drink.</h2>
+            <h2 class="title">Whipped cream is available as an option for each drink.</h2>
         </section>
-        <section>
-            <h2>Sound good?</h2>
-            <a href="order">Order online now!</a>
+        <section class="extrapad">
+            <h2 class="title">Sound good?</h2>
+            <div class="button-container">
+                <a href="order" class="button button-alt">Order online now!</a>
+            </div><br />
         </section>
     </main>
     <footer>
@@ -80,5 +85,6 @@
         <span>&copy;2024 Lighthouse Christian School</span><br />
         <span>Created for LCS and Student Conventions by David Jentes</span>
     </footer>
+    <script src="../assets/js/navhide.js"></script>
 </body>
 </html>
