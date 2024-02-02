@@ -11,6 +11,6 @@ function navScroll() {
         h1.style.fontSize = "20px"
     } else {
         nav.classList.remove("hidden");
-        h1.style.fontSize = "2rem"
+        h1.style.fontSize = "3rem"
     }
 }
