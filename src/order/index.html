@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order - Beacon Blend</title>
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/checkbox.css" />
 </head>
 <body>
     <header>
@@ -87,18 +88,18 @@
                     <option value="almond">Almond milk</option>
                 </select>
                 <h2>Your add-ons</h2>
-                <label><input type="checkbox" name="caramel" id="caramel" value="true" /> Salted Caramel</label><span id="caramelpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="caramelpumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="pecan" id="pecan" value="true" /> Butter Pecan</label><span id="pecanpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pecanpumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="pumpkin" id="pumpkin" value="true" /> Pumpkin</label><span id="pumpkinpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pumpkinpumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="sfvanilla" id="sfvanilla" value="true" /> Sugar-free Vanilla</label><span id="sfvanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfvanillapumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="hazelnut" id="hazelnut" value="true" /> Hazelnut</label><span id="hazelnutpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="hazelnutpumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="peppermint" id="peppermint" value="true" /> Peppermint</label><span id="peppermintpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="peppermintpumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="vanilla" id="vanilla" value="true" /> French Vanilla</label><span id="vanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="vanillapumps" class="pumps" /> pumps</span><br />
-                <label><input type="checkbox" name="sfmarshmallow" id="sfmarshmallow" value="true" /> Sugar-free Toasted Marshmallow</label><span id="sfmarshmallowpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfmarshmallowpumps" class="pumps" /> pumps</span><br /><br />
-                <label><input type="checkbox" name="mocha" value="true"> Mocha Swirl</label><br />
-                <label><input type="checkbox" name="whitemocha" value="true"> White Mocha Swirl</label><br />
-                <label><input type="checkbox" name="caramels" value="true"> Caramel Swirl</label><br />
-                <label><input type="checkbox" name="whippedcream" value="true"> Whipped Cream</label><br /><br /><br />
+                <label class="b-contain"><input type="checkbox" name="caramel" id="caramel" value="true" /><span>Salted Caramel</span><div class="b-input"></div></label><span id="caramelpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="caramelpumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="pecan" id="pecan" value="true" /><span>Butter Pecan</span><div class="b-input"></div></label><span id="pecanpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pecanpumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="pumpkin" id="pumpkin" value="true" /><span>Pumpkin</span><div class="b-input"></div></label><span id="pumpkinpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="pumpkinpumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="sfvanilla" id="sfvanilla" value="true" /><span>Sugar-free Vanilla</span><div class="b-input"></div></label><span id="sfvanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfvanillapumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="hazelnut" id="hazelnut" value="true" /><span>Hazelnut</span><div class="b-input"></div></label><span id="hazelnutpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="hazelnutpumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="peppermint" id="peppermint" value="true" /><span>Peppermint</span><div class="b-input"></div></label><span id="peppermintpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="peppermintpumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="vanilla" id="vanilla" value="true" /><span>French Vanilla</span><div class="b-input"></div></label><span id="vanillapumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="vanillapumps" class="pumps" /> pumps</span><br />
+                <label class="b-contain"><input type="checkbox" name="sfmarshmallow" id="sfmarshmallow" value="true" /><span>Sugar-free Toasted Marshmallow</span><div class="b-input"></div></label><span id="sfmarshmallowpumps" class="hidden"> - <input type="number" min="0.5" max="5" step="0.5" value="2" inputmode="decimal" required name="sfmarshmallowpumps" class="pumps" /> pumps</span><br /><br />
+                <label class="b-contain"><input type="checkbox" name="mocha" value="true"><span>Mocha Swirl</span><div class="b-input"></div></label><br />
+                <label class="b-contain"><input type="checkbox" name="whitemocha" value="true"><span>White Mocha Swirl</span><div class="b-input"></div></label><br />
+                <label class="b-contain"><input type="checkbox" name="caramels" value="true"><span>Caramel Swirl</span><div class="b-input"></div></label><br />
+                <label class="b-contain"><input type="checkbox" name="whippedcream" value="true"><span>Whipped Cream</span><div class="b-input"></div></label><br /><br /><br />
                 <div class="button-container">
                     <a href="#" class="button button-alt" id="step3back">Back</a>
                     <a href="#" class="button button-alt" id="step3next">Next</a>
